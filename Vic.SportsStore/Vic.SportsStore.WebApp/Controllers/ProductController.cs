@@ -12,7 +12,7 @@ namespace Vic.SportsStore.WebApp.Controllers
     public class ProductController : Controller
     {
         public IProductsRepository ProductsRepository { get; set; }
-          = new InMemoryProductRepository();
+          = new EFProductRepository();
         public ViewResult List()
         {
             return View(ProductsRepository.Products);
