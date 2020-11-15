@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vic.SportsStore.WebApp", "Vic.SportsStore.WebApp\Vic.SportsStore.WebApp.csproj", "{FFADA44D-3366-4C03-9DB5-532E521DC0FF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFADA44D-3366-4C03-9DB5-532E521DC0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFADA44D-3366-4C03-9DB5-532E521DC0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFADA44D-3366-4C03-9DB5-532E521DC0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFADA44D-3366-4C03-9DB5-532E521DC0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
