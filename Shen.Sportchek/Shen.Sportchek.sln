@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shen.Sportchek.WebApp", "Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shen.Sportchek.Domain", "Shen.Sportchek.Domain\Shen.Sportchek.Domain.csproj", "{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shen.Sportchek.UnitTests", "Shen.Sportchek.UnitTests\Shen.Sportchek.UnitTests.csproj", "{F30C417F-FFE3-4150-8700-8DC548080AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shen.Sportchek.DebugConsole", "Shen.Sportchek.DebugConsole\Shen.Sportchek.DebugConsole.csproj", "{A4EFB1DB-3486-4E70-A36C-B0F661899C3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30C417F-FFE3-4150-8700-8DC548080AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30C417F-FFE3-4150-8700-8DC548080AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30C417F-FFE3-4150-8700-8DC548080AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30C417F-FFE3-4150-8700-8DC548080AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4EFB1DB-3486-4E70-A36C-B0F661899C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4EFB1DB-3486-4E70-A36C-B0F661899C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4EFB1DB-3486-4E70-A36C-B0F661899C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4EFB1DB-3486-4E70-A36C-B0F661899C3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
