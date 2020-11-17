@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shen.Sportchek.WebApp", "Shen.Sportchek.WebApp\Shen.Sportchek.WebApp.csproj", "{94453B57-ACE5-465B-919B-DAE51656F82F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shen.Sportchek.Domain", "Shen.Sportchek.Domain\Shen.Sportchek.Domain.csproj", "{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{94453B57-ACE5-465B-919B-DAE51656F82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94453B57-ACE5-465B-919B-DAE51656F82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94453B57-ACE5-465B-919B-DAE51656F82F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDF9065-1A1E-4034-B4B3-F23DF2AF3DE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
