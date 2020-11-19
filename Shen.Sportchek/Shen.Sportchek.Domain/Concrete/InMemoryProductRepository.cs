@@ -13,9 +13,9 @@ namespace Shen.Sportchek.Domain.Concrete
     {
         private List<Product> _products = new List<Product>
         {
-            new Product { Name = "Skates", Price = 100},
-            new Product { Name = "Helmet", Price = 50},
-            new Product { Name = "Gloves", Price = 30}
+            new Product { Name = "Skates", Price = 100.01m},
+            new Product { Name = "Helmet", Price = 50.02m},
+            new Product { Name = "Gloves", Price = 30.03m}
         };
 
         public IEnumerable<Product> Products

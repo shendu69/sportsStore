@@ -7,7 +7,7 @@ using Shen.Sportchek.Domain.Entities;
 
 namespace Shen.Sportchek.Domain.Abstract
 {
-    interface IProductsRepository
+    public interface IProductsRepository
     {
         IEnumerable<Product> Products { get; }
     }
