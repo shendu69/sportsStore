@@ -11,10 +11,21 @@ namespace Shen.Sportchek.WebApp.Controllers
     public class ProductController : Controller
     {
         public IProductsRepository ProductsRepository { get; set; }
-         = new EFProductRepository();
-       public ViewResult List()
+          = new EFProductRepository();
+
+        public int PageSize = 3;
+
+       public ViewResult List(int page = 1)
         {
-            return View(ProductsRepository.Products);
+            var model = ProductsRepository
+                .Products
+                .OrderBy(p=>p.ProductID)
+                .Skip((page-1) * PageSize)
+                .Take(PageSize)
+                ;
+
+            return View(model);
+                
         }
     }
 }
