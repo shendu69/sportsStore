@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Shen.Sportchek.Domain.Abstract;
 using Shen.Sportchek.Domain.Concrete;
+using Shen.Sportchek.WebApp.Models;
 
 namespace Shen.Sportchek.WebApp.Controllers
 {
@@ -17,15 +18,30 @@ namespace Shen.Sportchek.WebApp.Controllers
 
        public ViewResult List(int page = 1)
         {
-            var model = ProductsRepository
-                .Products
-                .OrderBy(p=>p.ProductID)
-                .Skip((page-1) * PageSize)
-                .Take(PageSize)
-                ;
+            //var model = ProductsRepository
+            //    .Products
+            //    .OrderBy(p=>p.ProductID)
+            //    .Skip((page-1) * PageSize)
+            //    .Take(PageSize)
+            //    ;
 
-            return View(model);
-                
+            ProductsListViewModel model = new ProductsListViewModel
+            {
+                Products = ProductsRepository
+                .Products
+                .OrderBy(p => p.ProductID)
+                .Skip((page - 1) * PageSize)
+                .Take(PageSize),
+
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = page,
+                    ItemsPerPage = PageSize,
+                    TotalItems = ProductsRepository.Products.Count()
+                }
+            };
+
+            return View(model);                
         }
     }
 }
