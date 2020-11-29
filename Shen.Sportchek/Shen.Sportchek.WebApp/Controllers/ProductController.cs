@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Shen.Sportchek.Domain.Abstract;
 using Shen.Sportchek.Domain.Concrete;
+using Shen.Sportchek.Domain.Entities;
 using Shen.Sportchek.WebApp.Models;
 
 namespace Shen.Sportchek.WebApp.Controllers
@@ -23,7 +24,7 @@ namespace Shen.Sportchek.WebApp.Controllers
                 Products = ProductsRepository
                     .Products
                     .Where(p => category == null || p.Category == category)
-                    .OrderBy(p => p.ProductID)
+                    .OrderBy(p => p.ProductId)
                     .Skip((page - 1) * PageSize)
                     .Take(PageSize),
                 PagingInfo = new PagingInfo
@@ -38,6 +39,21 @@ namespace Shen.Sportchek.WebApp.Controllers
                 CurrentCategory = category
             };
             return View(model);
+        }
+
+        public FileContentResult GetImage(int productId)
+        {
+            Product prod = ProductsRepository
+            .Products
+            .FirstOrDefault(p => p.ProductId == productId);
+            if (prod != null)
+            {
+                return File(prod.ImageData, prod.ImageMimeType);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
