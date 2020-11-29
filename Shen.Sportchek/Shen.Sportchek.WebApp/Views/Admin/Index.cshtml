@@ -18,13 +18,13 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td class="text-right">@item.ProductID</td>
-                    <td>@Html.ActionLink(item.Name, "Edit", new { item.ProductID })</td>
+                    <td class="text-right">@item.ProductId</td>
+                    <td>@Html.ActionLink(item.Name, "Edit", new { item.ProductId })</td>
                     <td class="text-right">@item.Price.ToString("c")</td>
                     <td class="text-center">
                         @using (Html.BeginForm("Delete", "Admin"))
                         {
-                            @Html.Hidden("ProductId", item.ProductID)
+                            @Html.Hidden("ProductId", item.ProductId)
                             <input type="submit"
                                    class="btn btn-default btn-xs"
                                    value="Delete" />
