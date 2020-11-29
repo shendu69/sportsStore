@@ -21,11 +21,11 @@ namespace Shen.Sportchek.WebApp.Controllers
             ProductsListViewModel model = new ProductsListViewModel
             {
                 Products = ProductsRepository
-            .Products
-            .Where(p => category == null || p.Category == category)
-            .OrderBy(p => p.ProductID)
-            .Skip((page - 1) * PageSize)
-            .Take(PageSize),
+                    .Products
+                    .Where(p => category == null || p.Category == category)
+                    .OrderBy(p => p.ProductID)
+                    .Skip((page - 1) * PageSize)
+                    .Take(PageSize),
                 PagingInfo = new PagingInfo
                 {
                     CurrentPage = page,

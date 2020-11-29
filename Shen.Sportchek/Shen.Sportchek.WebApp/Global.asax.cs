@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Shen.Sportchek.Domain.Entities;
+using Shen.Sportchek.WebApp.Infrastructure.Binders;
 
 namespace Shen.Sportchek.WebApp
 {
@@ -13,6 +15,7 @@ namespace Shen.Sportchek.WebApp
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
     }
 }

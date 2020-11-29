@@ -13,14 +13,25 @@ namespace Shen.Sportchek.WebApp.Controllers
         // GET: Nav
         public IProductsRepository ProductsRepository { get; set; }
           = new EFProductRepository();
-        public PartialViewResult Menu()
+        //public PartialViewResult Menu()
+        //{
+        //    IEnumerable<string> categories = ProductsRepository
+        //    .Products
+        //    .Select(x => x.Category)
+        //    .Distinct()
+        //    .OrderBy(x => x);
+
+        //    return PartialView(categories);
+        //}
+
+        public PartialViewResult Menu(string category = null)
         {
+            ViewBag.SelectedCategory = category;
             IEnumerable<string> categories = ProductsRepository
             .Products
             .Select(x => x.Category)
             .Distinct()
             .OrderBy(x => x);
-
             return PartialView(categories);
         }
     }
