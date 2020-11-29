@@ -38,5 +38,10 @@ namespace Shen.Sportchek.WebApp.Controllers
             }
         }
 
+        public ViewResult Create()
+        {
+            return View("Edit", new Product());
+        }
+
     }
 }
