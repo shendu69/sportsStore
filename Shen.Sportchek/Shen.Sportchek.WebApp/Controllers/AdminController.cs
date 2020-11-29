@@ -9,6 +9,7 @@ using Shen.Sportchek.Domain.Entities;
 
 namespace Shen.Sportchek.WebApp.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         public IProductsRepository ProductsRepository { get; set; }
