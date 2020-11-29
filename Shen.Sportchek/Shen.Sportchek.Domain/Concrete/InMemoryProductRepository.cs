@@ -22,5 +22,10 @@ namespace Shen.Sportchek.Domain.Concrete
         {
             get { return _products; }
         }
+
+        public void SaveProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

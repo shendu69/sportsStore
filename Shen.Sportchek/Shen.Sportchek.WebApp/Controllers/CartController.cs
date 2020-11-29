@@ -15,8 +15,9 @@ namespace Shen.Sportchek.WebApp.Controllers
         public IProductsRepository ProductsRepository { get; set; }
           = new EFProductRepository();
 
-        public IOrderProcessor OrderProcessor;
- 
+        public IOrderProcessor OrderProcessor { get; set; }
+          = new EmailOrderProcessor(new EmailSettings());
+
         public ViewResult Index(Cart cart, string returnUrl)
         {
             return View(new CartIndexViewModel
